@@ -12,12 +12,11 @@ suivants :
 - Constructeur avec des valeurs par défaut
 - Méthode incrementerAge() déclenchant this.age++;
 
-Ajouter et tester une nouvelle classe Employee dans src comportant les
-éléments suivants :
-    - Héritage vis-à-vis de Personne
-    - Attribut supplémentaire salaire (de type number )
-    - Constructeur avec lien avec super-classe
-    - Méthode augmenterSalaire(augmentation: number)
+Ajouter et tester une nouvelle classe Employee dans src comportant les éléments suivants :
+- Héritage vis-à-vis de Personne
+- Attribut supplémentaire salaire (de type number )
+- Constructeur avec lien avec super-classe
+- Méthode augmenterSalaire(augmentation: number)
 
 Ajouter facultativement une interface IPerson imposant au minimum les parties suivantes :
 - numero ( number )

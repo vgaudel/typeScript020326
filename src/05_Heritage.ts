@@ -1,4 +1,4 @@
-class Porte{
+class Porte implements Ouvrable{
     numero : number ;
     typePorte : string; 
 
@@ -8,6 +8,10 @@ class Porte{
     }
     
     get nomPorte() { return "porte_" + this.typePorte + "_" + this.numero; }
+    
+    verifierClef(clef: string): boolean {
+        return true;
+    }
     ouvrir(){ console.log("la porte s'ouvre ... "); }
     fermer(){ console.log("la porte se ferme ... "); }
 }
@@ -19,6 +23,7 @@ porteQuelconque.fermer(); // la porte se ferme ...
 
 class PorteCoulissante extends Porte{
     ouvertureGlissiere : number =0; //en cm
+
     constructor(num:number = 0){ 
         super(num,"coulissante");
     }
@@ -34,3 +39,14 @@ class PorteCoulissante extends Porte{
     }
 }
 
+let porteCoulissante : Porte = new PorteCoulissante(6);
+console.log(porteCoulissante.nomPorte);// 
+porteCoulissante.ouvrir(); // la porte s'ouvre ...
+porteCoulissante.fermer(); 
+
+
+interface Ouvrable {
+    verifierClef(clef:string):boolean;
+    ouvrir() : void;
+    fermer() : void;
+}
