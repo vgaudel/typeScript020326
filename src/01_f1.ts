@@ -1,3 +1,6 @@
+
+
+
 let a : string = "Hello World";
 console.log(a); // Hello World 
 console.log("nouvel affichage");
@@ -37,3 +40,5 @@ tableau2.push("f");
 
 console .log(tableau1); // [ 'a', 'b', 'c' ]
 console .log(tableau2); // [ 'd', 'e', 'f' ]
+
+
